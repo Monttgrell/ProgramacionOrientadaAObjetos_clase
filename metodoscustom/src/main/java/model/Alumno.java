@@ -11,9 +11,10 @@ public class Alumno {
         this.salud=100;
     }
 
-    public Alumno(String nombre, String apellido, int edad){
+    public Alumno(String nombre, String apellido, int edad) throws Exception {
         this.setNombre(nombre);
         this.setApellido(apellido);
+        this.setEdad(edad);
         this.salud=100;
     }
 
@@ -70,7 +71,7 @@ public class Alumno {
     public void comer(){
         if(salud<=90){
             salud+=10;
-        } else if (salud<90 && salud<100){
+        } else if (salud>90 && salud<100){
             salud=100;
         }
     }
@@ -81,27 +82,27 @@ public class Alumno {
         else {
             throw new Exception("Se murió el alumnito...");
         }
+    }
 
     public String verEstado(){
             switch (this.salud){
                 case 100:
                     return "Está sanito";
-                    break;
+                    //break;
                 case 70:
                     return "Happy";
-                    break;
+                    //break;
                 case 50:
                     return "arriba de la pelota";
                 case 30:
                     return "jugoso";
-                    break;
+                    //break;
                 case 10:
-                    return "Wuajardo"
-                    break;
+                    return "Wuajardo";
+                    //break;
                 default:
                     return "Opción no válida";
-                    break;
+                    //break;
             }
         }
-}
 }
