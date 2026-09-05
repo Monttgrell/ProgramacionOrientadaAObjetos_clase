@@ -9,11 +9,12 @@ public class Pokemon {
     private int nivel;
     private List<Evolucion> evoluciones = new ArrayList<>();
 
-    public Pokemon(String nombre, Tipo tipo, int nivel, List<Evolucion> evoluciones) {
+    public Pokemon(String nombre, Tipo tipo, int nivel, Evolucion evoluciones) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.nivel = nivel;
-        this.evoluciones = evoluciones;
+        this.evoluciones.add(evoluciones); // acá se agrega a la lista evoluciones, una lista evolución
+
     }
 
 

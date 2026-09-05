@@ -6,8 +6,8 @@ import java.util.List;
 public class Pokedex {
     private List<Pokemon> pokemons= new ArrayList<>();;
 
-    public void anadirpokemon(pokemon){
-        this.pokemons(.add)
+    public void anadirpokemon(Pokemon pokemon){
+        this.pokemons.add(pokemon);
     }
 
 
