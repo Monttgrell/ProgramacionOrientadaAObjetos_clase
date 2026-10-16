@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="txtnombre" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ejemplo_jfx.HelloController">
+   <children>
+      <Label id="lbl_sal_2" fx:id="lbl_sal_2" alignment="CENTER" prefHeight="17.0" prefWidth="144.0" text="..." textAlignment="CENTER" >
+         <font>
+            <Font name="Comic Sans MS" size="38.0" />
+         </font></Label>
+      <Button fx:id="btn_sal" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="44.0" prefWidth="98.0"  onAction="#Saludar" text="Saludar" />
+      <Label id="lbl_sal" fx:id="lbl_sal"  prefHeight="17.0" prefWidth="144.0" text="Ingrese su nombre" />
+      <TextField id="txt_ing_nombre" fx:id="txt_ing_nombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="143.0" promptText="cabeza de alcornoque" />
+      <Button id="sal_con_nombre" fx:id="sal_con_nombre" mnemonicParsing="false" text="Saludar con Nombre" onAction="#SaludarConNombre" />
+   </children>
+</VBox>
